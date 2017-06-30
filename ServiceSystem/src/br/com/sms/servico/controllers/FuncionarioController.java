@@ -21,6 +21,10 @@ public class FuncionarioController {
 		dao.alterar(po);
 	}
 
+	public List<FuncionarioPO> selectDynamic(String nome, String cpf, String setor) throws Exception {
+		return dao.selectDynamic(nome, cpf, setor);
+	}
+
 	public List<FuncionarioPO> select() throws Exception {
 		return dao.select();
 	}

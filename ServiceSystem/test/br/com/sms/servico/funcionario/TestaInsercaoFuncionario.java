@@ -7,8 +7,8 @@ public class TestaInsercaoFuncionario {
 
 	public static void main(String[] args) throws Exception {
 		FuncionarioPO po = new FuncionarioPO();
-		po.setCargo("Estagiário");
-		po.setCpf("222.222.221-30");
+		po.setCargo("Chefe");
+		po.setCpf("222.222.221-34");
 		po.setEmail("teste@teste.com");
 		po.setNome("João");
 		po.setSetor("Informática");
