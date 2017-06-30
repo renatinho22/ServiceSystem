@@ -9,15 +9,23 @@ public class FuncionarioController {
 
 	private FuncionarioDao dao = new FuncionarioDao();
 
-	public void inserir(FuncionarioPO po) {
+	public void inserir(FuncionarioPO po) throws Exception {
 		dao.inserir(po);
 	}
 
-	public List<FuncionarioPO> select() {
+	public void alterar(FuncionarioPO po) throws Exception {
+		dao.alterar(po);
+	}
+
+	public void excluir(FuncionarioPO po) throws Exception {
+		dao.alterar(po);
+	}
+
+	public List<FuncionarioPO> select() throws Exception {
 		return dao.select();
 	}
 
-	public FuncionarioPO selectById(Long id) {
+	public FuncionarioPO selectById(Long id) throws Exception {
 		return dao.selectById(id);
 	}
 }

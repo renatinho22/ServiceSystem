@@ -7,7 +7,7 @@ import br.com.sms.servico.models.FuncionarioPO;
 
 public class TestaSelectFuncionario {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		FuncionarioController controller = new FuncionarioController();
 		List<FuncionarioPO> funcionarios = controller.select();
 		System.out.println(funcionarios);

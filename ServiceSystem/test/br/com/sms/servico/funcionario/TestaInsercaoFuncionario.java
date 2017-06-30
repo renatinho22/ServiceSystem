@@ -5,7 +5,7 @@ import br.com.sms.servico.models.FuncionarioPO;
 
 public class TestaInsercaoFuncionario {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		FuncionarioPO po = new FuncionarioPO();
 		po.setCargo("Estagiário");
 		po.setCpf("222.222.221-30");
