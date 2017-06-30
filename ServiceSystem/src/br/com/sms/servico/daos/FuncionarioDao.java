@@ -28,7 +28,7 @@ public class FuncionarioDao {
 		try {
 			em.getTransaction().begin();
 			FuncionarioPO funcionarioPO = em.find(FuncionarioPO.class, po.getId());
-			em.remove(funcionarioPO);
+			em.persist(funcionarioPO);
 			em.getTransaction().commit();
 			em.close();
 		} catch (Exception e) {
